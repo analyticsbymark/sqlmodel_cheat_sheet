@@ -1,0 +1,147 @@
+@font-face {
+font-family:"roc-grotesk";
+src:url("https://use.typekit.net/af/97dd77/00000000000000007735b7d4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/97dd77/00000000000000007735b7d4/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/97dd77/00000000000000007735b7d4/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+:root {
+  --bs-emphasis-color: #384D48;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.3em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 300;
+  font-family:  "roc-grotesk", "Open Sans", sans-serif;
+  color: #384D48;
+  background-color: #EAE9E7;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+h1 {
+  font-size: 3.815rem;
+  letter-spacing: -0.1rem;
+}
+h2 {
+  font-size: 3.052rem;
+  letter-spacing: -0.1rem;
+}
+h3 {
+  font-size: 2.441rem;
+  letter-spacing: -0.1rem;
+}
+h4 {
+  font-size: 1.953rem;
+  letter-spacing: -0.08rem;
+}
+h5 {
+  font-size: 1.563rem;
+  letter-spacing: -0.05rem;
+}
+h6 {
+  font-size: 1.25rem;
+  letter-spacing: 0;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+/* Links */
+a {
+  color: #384D48;
+}
+a:hover {
+  color: #6E7271;
+}
+
+.ag-theme-alpine.border {
+
+  /* disable all borders */
+  --ag-borders: none;
+  --ag-borders-secondary: none;
+  --ag-header-background-color: #384D48;
+  --ag-header-foreground-color: #fff;
+  --ag-row-border-width: none;
+}
+
+.bg-light {
+  background-color: #384D48 !important;
+}
+
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(56, 77, 72, 0.25);
+  margin-bottom: 1rem;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #384D48;
+  color: white;
+}
+
+.accordion-flush .accordion-item:first-child {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.accordion-flush .accordion-item:first-child .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.accordion-flush .accordion-item:last-child .accordion-button.collapsed {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.accordion-flush .accordion-item:last-child {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#joining-data-joined-output-text {
+  color: red;
+}
+
+#react-select-3--value-item
+
+@media (min-width: 700px) {
+
+  .container {
+    width: 85%;
+    padding: 0;
+  }
+
+}
