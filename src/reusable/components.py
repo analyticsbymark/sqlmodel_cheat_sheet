@@ -34,7 +34,6 @@ def create_grid(
     df: pd.DataFrame,
     number_cols: list,
     height: int = 200,
-    columnSize="responsiveSizeToFit",
     **kwargs,
 ):
     columnDefs = []
@@ -57,7 +56,10 @@ def create_grid(
         rowData=df.to_dict("records"),
         columnDefs=columnDefs,
         defaultColDef={"resizable": True, "sortable": True, "filter": True},
-        columnSize=columnSize,
+        columnSize="sizeToFit",
+        columnSizeOptions={
+            'defaultMinWidth': 100
+        },
         style={"height": height},
         dashGridOptions={"rowHeight": "16", "headerHeight": "24"},
         className="ag-theme-alpine border",

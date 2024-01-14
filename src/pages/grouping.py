@@ -111,10 +111,6 @@ def group_data_tables(dropdown_selection):
         _id=_id("output-grid"),
         df=filter_df,
         number_cols=number_cols,
-        columnSize="sizeToFit",
-        columnSizeOptions={
-            'defaultMinWidth': 100
-        },
     )
 
     return grid

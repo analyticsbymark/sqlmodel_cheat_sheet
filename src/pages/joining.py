@@ -121,8 +121,7 @@ def join_data_tables(dropdown_selection):
     grid = create_grid(
         _id=_id("output-grid"),
         df=filter_df,
-        number_cols=number_cols,
-        columnSize="autoSize",
+        number_cols=number_cols
     )
 
     return grid, text
