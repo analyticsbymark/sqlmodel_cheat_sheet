@@ -54,6 +54,7 @@ layout = [
                 options=groupby_filters,
                 value=groupby_filters[0],
                 multi=False,
+                searchable=False,
                 optionHeight=50,
                 id=_id("selection-dropdown")
             ),

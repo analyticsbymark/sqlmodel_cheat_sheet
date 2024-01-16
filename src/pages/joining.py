@@ -57,6 +57,7 @@ layout = [
             dcc.Dropdown(
                 options=join_filters,
                 value=join_filters[0],
+                searchable=False,
                 multi=False,
                 id=_id("selection-dropdown"),
             ),

@@ -73,6 +73,7 @@ layout = [
                 options=policy_filters,
                 value=policy_filters[0],
                 multi=False,
+                searchable=False,
                 id=_id("selection-dropdown"),
             ),
         ],

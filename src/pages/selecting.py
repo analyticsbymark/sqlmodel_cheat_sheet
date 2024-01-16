@@ -71,6 +71,7 @@ layout = [
             dcc.Dropdown(
                 options=policy_filters,
                 value=policy_filters[0],
+                searchable=False,
                 multi=False,
                 id=_id("selection-dropdown"),
             ),
